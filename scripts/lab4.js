@@ -33,6 +33,9 @@ function discountPrices(prices, discount) {
     }
 
     for(let i = 0; i < length; i++) {
+        if(typeof prices[i] !== 'number') {
+            return false;
+        }
         discountedPrice = prices[i] * (1 - discount);
         discounted.push(discountedPrice);
     }
