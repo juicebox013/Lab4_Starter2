@@ -9,7 +9,7 @@ function sumValues(num1, num2, add) {
     if (add) {
         let result = 0;
 
-        result = num1 + num2;
+        result = Number(num1) + Number(num2);
 
         return result;
     }
